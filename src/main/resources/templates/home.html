@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link th:href = "@{/bootstrap.min.css}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+<div th:replace="fragments/header :: header">
+</div>
+<div class="container">
+
+    <div class="hero-unit">
+        <h1>Test</h1>
+        <p>
+            Welcome to the Spring MVC Quickstart application!
+            Get started quickly by signing up.
+            <span th:text="${appName}"></span> is name of our app.
+        </p>
+<!--        <p>-->
+<!--            <a href="/signup" th:href="@{/signup}" class="btn btn-large btn-success">Sign up</a>-->
+<!--        </p>-->
+    </div>
+    <div th:replace="fragments/footer :: footer"></div>
+</div>
+</body>
+</html>
